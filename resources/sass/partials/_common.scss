@@ -29,3 +29,10 @@ h2 {
     text-transform: uppercase;
     color: $colore_testo_hover;
 }
+
+h3 {
+    text-transform: uppercase;
+    color: $colore_testo;
+    font-size: $font_size + 5;
+    letter-spacing: 2px;
+}

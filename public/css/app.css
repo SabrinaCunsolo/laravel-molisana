@@ -30,6 +30,13 @@ h2 {
   color: #514f4f;
 }
 
+h3 {
+  text-transform: uppercase;
+  color: #001942;
+  font-size: 29px;
+  letter-spacing: 2px;
+}
+
 header {
   text-align: center;
 }
@@ -47,7 +54,7 @@ header a:hover {
   background-color: #B3E5FC;
 }
 
-main {
+#main-container {
   background-image: url("/images/background-main.jpg");
   background-position: center;
   background-size: cover;
@@ -61,7 +68,8 @@ main {
 
 .card-container .card {
   position: relative;
-  width: calc(100% / 3);
+  width: calc(100% / 3 - 28px);
+  margin: 14px 19px 0 0;
 }
 
 .card-container .card img {
