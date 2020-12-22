@@ -3,16 +3,22 @@
 @section('titolo-pagina', 'Homepage - Prodotti - La Molisana')
 
 @section('content')
-    <p>pagina prodotti:</p>
+    <main>
+        <div class="container">
+            <p>pagina prodotti:</p>
+            <div class="card-container">
+                    @foreach ($pasta as $tipo_pasta)
+                        <div class="card">
+                            <img src="{{ $tipo_pasta['src'] }}" alt="{{ $tipo_pasta['titolo'] }}">
 
-
-
-    @foreach ($pasta as $tipo_pasta)
-        <div class="card">
-            <img src="{{ $tipo_pasta['src'] }}" alt="{{ $tipo_pasta['titolo'] }}">
+                            <div class="card-hover">
+                                <a href="#">
+                                    {{ $tipo_pasta['titolo'] }}
+                                </a>
+                            </div>
+                        </div>
+                    @endforeach
+            </div>
         </div>
-        <div class="card-hover">
-            <p>{{ $tipo_pasta['titolo'] }}</p>
-        </div>
-    @endforeach
+    </main>
 @endsection

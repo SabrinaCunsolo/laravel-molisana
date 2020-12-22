@@ -1,0 +1,18 @@
+header {
+    text-align: center;
+
+
+    a {
+        color: $colore_testo;
+        text-decoration: none;
+        font-size: $font_size;
+        padding: 10px;
+        display: inline-block;
+
+        &:hover {
+            color: $colore_testo_hover;
+            background-color: $colore_button_menu;
+        }
+    }
+
+}

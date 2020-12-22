@@ -3,5 +3,7 @@
 @section('titolo-pagina', 'Homepage - La Molisana')
 
 @section('content')
-    <p>homepage</p>
+    <div class="container">
+        <p>homepage</p>
+    </div>
 @endsection
